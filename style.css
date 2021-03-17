@@ -1,0 +1,332 @@
+body {
+  font-family: sans-serif;
+  background-color: #ffffff;
+}
+
+.file-upload {
+  margin: 0 auto;
+  padding: 3% 5%;
+  border-radius: 10px;
+  border: solid 1.5px #f6f7fa;
+  background-color: #f6f7fa;
+}
+
+.file-upload-content {
+  display: none;
+  text-align: center;
+}
+
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.image-upload-wrap {
+  width: 65%;
+  margin: 0 auto;
+  border: 1.5px dashed #35465d;
+  position: relative;
+  object-fit: contain;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+  background-color: #35465d;
+  border: 1.5px dashed #ffffff;
+}
+
+.image-title-wrap {
+  padding: 0 15px 15px 15px;
+  color: #222;
+}
+
+.drag-text {
+  text-align: center;
+}
+
+.drag-text h3 {
+  width: 40%;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #15824b;
+  padding: 60px 0;
+  font-family: NanumSquareR;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #35465d;
+  margin: 0 auto;
+}
+
+.file-upload-image {
+  max-height: 200px;
+  max-width: 200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.remove-image {
+  width: 30%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: #fff;
+  background: #cd4535;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #b02818;
+  transition: all 0.2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.remove-image:hover {
+  background: #c13b2a;
+  color: #ffffff;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all 0.2s ease;
+}
+
+.nav-distance {
+  padding: 2.1% 7.7%;
+}
+
+.navbar-light .navbar-brand {
+  font-family: NanumSquareR;
+  line-height: 1.68;
+  text-align: left;
+  color: #35465d;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: #ffffff;
+}
+
+.section {
+  margin-top: 100px;
+}
+
+.title {
+  font-family: NanumSquareR;
+  line-height: 1.68;
+  text-align: center;
+  color: #35465d;
+}
+
+.subtitle {
+  font-family: NanumSquareR;
+  line-height: 1.53;
+  text-align: center;
+  color: #35465d;
+}
+
+/* Media Query example에서 가져옴. 
+  반응형 CSS를 만들기 위한 것임.
+  If screen size is 600px wide, or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+  .navbar-brand {
+    font-size: 2rem;
+  }
+}
+
+.youtube-link {
+  font-family: NanumSquareR;
+  font-size: 1.5rem;
+  line-height: 1.71;
+  text-align: center;
+  color: #f73737;
+  text-decoration: underline;
+}
+
+.youtube-link:hover {
+  font-family: NanumSquareR;
+  font-size: 1.5rem;
+  line-height: 1.71;
+  text-align: center;
+  color: #f73737;
+  text-decoration: underline;
+}
+
+.youtube-icon {
+  width: 8%;
+  height: 8%;
+}
+
+/* Make sure that padding behaves as expected */
+* {
+  box-sizing: border-box;
+}
+
+#barName {
+  text-align: right;
+  padding-top: 3px; /* Add top padding */
+  padding-bottom: 3px; /* Add bottom padding */
+  padding-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Container for skill bars */
+#labelBar {
+  /* width: 100%; Full width */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-bottom: 0px; /* Add bottom padding */
+  background-color: #ddd; /* Grey background */
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.animal {
+  height: 20px;
+  text-align: left; /* Right-align text */
+  text-indent: 5px;
+  color: rgb(199, 148, 7); /* White text color */
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-top: 0px; /* Add top padding */
+  padding-bottom: 0px; /* Add bottom padding */
+  padding-left: 0px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.dog {
+  background-color: #4caf50;
+} /* Green */
+.cat {
+  background-color: #2196f3;
+} /* Blue */
+.bear {
+  background-color: #f44336;
+} /* Red */
+.rabbit {
+  background-color: #808080;
+} /* Dark Grey */
+.dinosaur {
+  background-color: #f7f309;
+} /* yellow */
+
+#disqus_thread {
+  padding: 0% 10%;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  margin: 0 auto;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: solid 1.5px #f6f7fa;
+  background-color: #f6f7fa;
+}
+
+.artboard {
+  width: 80px;
+  position: relative;
+  margin: 50px auto 10px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  margin: 0 auto;
+}
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 34px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.24);
+}
+.slider .btn {
+  box-sizing: border-box;
+  align-content: center;
+  position: absolute;
+  /* content: url(/img/male.png); */
+  height: 30px;
+  width: 30px;
+  left: 8px;
+  bottom: 5px;
+  background-color: #ffdde4;
+  transition: 0.4s;
+  border-radius: 50%;
+  border: 2px solid #9293ee;
+}
+/* .slider .btn:after,
+.slider .btn:before {
+  position: absolute;
+  content: url(/img/male.png);
+  top: 12px;
+  left: 12px;
+  background: #9293ee;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+} */
+
+.slider .btn:before {
+  top: 25px;
+}
+/* .slider .btn .mouth {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 7px;
+  height: 7px;
+  background: transparent;
+  border-radius: 45%;
+  transform: rotate(45deg);
+  border-top: 2px solid #9293ee;
+  border-right: 2px solid #9293ee;
+} */
+.slider .btn img {
+  opacity: 0;
+  transition: all 0.5s;
+  position: absolute;
+  top: -10px;
+  left: 0px;
+  transform: rotate(180deg);
+  width: 27px;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+input:checked + .slider > .btn {
+  transform: translateX(37px) rotate(180deg);
+}
+input:checked + .slider img {
+  opacity: 1;
+}
