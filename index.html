@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Bootstrap을 사용하기 위한 조건들을 저장 -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -25,7 +24,6 @@
     ></script>
   </head>
   <body>
-    <!-- Bootstrap 예제에서 navbar 검색후 하나를 가져옴 -->
     <nav class="navbar navbar-expand-lg navbar-light nav-distance">
       <a class="navbar-brand" href="#">Face Check</a>
       <button
@@ -69,8 +67,6 @@
       <h2 class="subtitle">Tôi trông giống con vật gì vậy ???</h2>
     </section>
     
-
-    <!-- 성별 구분을 위한 토글 버튼 -->
     <section>
       <div class="artboard">
         <p class="gender" style="text-align: center;">Giới tính: Phụ nữ</p>
@@ -126,7 +122,7 @@
 
     <div id="label-container"></div>
 
-    <!-- 댓글 기능 관련 div 및 script -->
+
     <div id="disqus_thread"></div>
     <script>
      
@@ -147,13 +143,13 @@
       ></noscript
     >
 
-    <!-- 성별 구분 관련 토글 버튼 -->
+   
     <script>
       function check(obj) {
         if (obj.checked) {
-          $(".gender").html("성별: 남자");
+          $(".gender").html("Giới tính: Nam giới");
         } else {
-          $(".gender").html("성별: 여자");
+          $(".gender").html("Giới tính: Phụ nữ");
         }
       }
     </script>
